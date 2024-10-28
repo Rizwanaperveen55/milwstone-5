@@ -1,0 +1,273 @@
+/* Global styles */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(to right, #6a11cb, #feb47b);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #0b0202;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+/* Form styling */
+form {
+    background-color: #e5bdbd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 40px solid rgb(118, 106, 185); /* Corrected border */
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #8746b0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    background-color: aliceblue;
+}
+
+legend {
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    font-size: 30px;
+}
+
+label {
+    color: #333;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #5e35b1;
+}
+
+button {
+    background-color: #7b5eb5;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: #4b14ef;
+}
+
+/* Resume output section */
+#resumeOutput {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #6a11cb;
+    border-radius: 10px;
+    background: linear-gradient(to right, #8aafce, #f5ece6);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+#resumeOutput h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #feb47b;
+    padding-bottom: 5px;
+}
+
+#resumeOutput img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #6a11cb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
+    object-fit: cover; /* Ensure the image does not stretch or distort */
+}
+
+#resumeOutput p {
+    line-height: 1.8;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+#resumeOutput .section {
+    margin-top: 20px;
+}
+
+#resumeOutput .section-title {
+    font-size: 1.8rem;
+    color: #6a11cb;
+    border-bottom: 1px solid #feb47b;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+#resumeOutput ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #444;
+}
+
+#resumeOutput li {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+#resumeOutput .skills-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#resumeOutput .skills-section li {
+    background-color: #6a11cb;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Styling for the Shareable Link Section */
+#shareableSection {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#shareableLink {
+    padding: 10px;
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    word-break: break-all; /* Ensures long links break to the next line */
+}
+
+#shareableSection p {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+#copyButton {
+    background-color: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#copyButton:hover {
+    background-color: #feb47b;
+}
+
+/* Download CV Button */
+.download-cv-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5rem; /* Match with other buttons */
+    margin-top: 20px; /* Space from other elements */
+}
+
+.download-cv-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    form {
+        max-width: 700px;
+    }
+
+    #resumeOutput {
+        max-width: 700px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 25px;
+    }
+
+    #resumeOutput img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    #resumeOutput img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    #resumeOutput img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 300px) {
+    #resumeOutput img {
+        width: 60px;
+        height: 60px;
+    }
+}
